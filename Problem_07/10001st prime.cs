@@ -21,7 +21,7 @@ namespace Problem_07
             int currentPrime = 0;
             int biggestPrime = 0;
 
-            for (int i = 2; i < 50000; i++)
+            for (int i = 2; i < 150000; i++)
             {
                 for (int j = 1; j <= i; j++)
                 {
@@ -39,13 +39,14 @@ namespace Problem_07
                         {
                             biggestPrime = currentPrime;
                         }
+                        if (mastercount == 10001)
+                        {
+                            Console.WriteLine(biggestPrime + " " + "<- needed prime number");
+                        }
 	                }
                 count = 0;
+
             }
-
-            Console.WriteLine(mastercount);
-            Console.WriteLine(biggestPrime);
-
         }
     }
 }
